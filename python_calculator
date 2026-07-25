@@ -1,0 +1,24 @@
+while True:
+
+    calculator_1 = int(input('Enter First Number: '))
+    calculator_2 = input('Choose One(+,-,*,/): ')
+    calculator_3 = int(input('Enter second Number: '))
+
+    def calc(x,o,y):
+        if o == '+':
+            print(x + y)
+        elif o == '-':
+            print(x - y)
+        elif o == '*':
+            print(x * y)
+        elif o == '/':
+            print(x / y)
+        else:
+            print('Error!')
+
+
+    calc(calculator_1,calculator_2,calculator_3)
+
+    x = input('Do you want to calculate again?(y/n): ')
+    if x == 'n': 
+        break 
